@@ -6,7 +6,7 @@
 /*   By: pbencze <pbencze@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:11:03 by pbencze           #+#    #+#             */
-/*   Updated: 2024/05/19 17:27:28 by pbencze          ###   ########.fr       */
+/*   Updated: 2024/05/19 17:34:18 by pbencze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ char	**ft_split(char const *s, char c)
 	char const	*start;
 
 	wordcount = ft_wordcount(s, c);
-	if (ret = (char **)malloc(sizeof(char *) * (wordcount + 1)) == NULL); //ret = (char **)malloc(sizeof(char *) * (wordcount) + 1);
+	ret = (char **)malloc(sizeof(char *) * (wordcount) + 1);
+	if (!ret)
 		return (NULL);
 	i = 0;
 	while (*s && i < wordcount)
