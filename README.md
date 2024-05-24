@@ -1,2 +1,2 @@
 # Libft
-This project is a small library of some reimplemented standard C library functions.
+This project is a small library of some standard C library functions.
